@@ -1,6 +1,10 @@
 .section-banner{
     margin-bottom: 50px;
 
+    @include query(laptop){
+        padding-top: 60px;
+    }
+
     &__img--main{
 
         & img{

@@ -42,7 +42,9 @@ a:visited {
   position: relative; }
   @media only screen and (max-width: 1279px) {
     .header-top-container {
-      height: 55px; } }
+      height: 55px;
+      position: fixed;
+      width: 100vw; } }
   @media only screen and (max-width: 480px) {
     .header-top-container {
       padding: 5px 0;
@@ -203,6 +205,8 @@ a:visited {
       height: 50px; } }
   @media only screen and (max-width: 1279px) {
     .nav-container {
+      position: fixed;
+      top: 55px;
       left: -100%; } }
 
 .main-nav {
@@ -230,6 +234,9 @@ a:visited {
         font-size: 1.6rem;
         font-weight: 700;
         transition: all .2s; }
+      @media only screen and (max-width: 767px) {
+        .main-nav > ul > li:last-child {
+          margin-bottom: 100px; } }
       .main-nav > ul > li:hover {
         cursor: pointer; }
       .main-nav > ul > li:hover > a {
@@ -375,6 +382,9 @@ a:visited {
 
 .section-banner {
   margin-bottom: 50px; }
+  @media only screen and (max-width: 1279px) {
+    .section-banner {
+      padding-top: 60px; } }
   .section-banner__img--main img {
     border: 10px solid #fff;
     width: 100%; }

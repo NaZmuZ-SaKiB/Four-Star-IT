@@ -5,6 +5,8 @@
 
     @include query(laptop){
         height: 55px;
+        position: fixed;
+        width: 100vw;
     }
 
     @include query(phone){
@@ -223,6 +225,8 @@
     }
 
     @include query(laptop){
+        position: fixed;
+        top: 55px;
         left: -100%;
     }
     
@@ -259,6 +263,12 @@
                 font-size: 1.6rem;
                 font-weight: 700;
                 transition: all .2s;
+            }
+
+            &:last-child{
+                @include query(tab-port){
+                    margin-bottom: 100px;
+                }
             }
 
             &:hover{
