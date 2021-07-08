@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Four Star IT</title>
+</head>
+
+<body>
+    <header>
+        <input style="display: none;" type="checkbox" id="nav-toggle-btn">
+        <div class="header-top-container">
+            <div class="row">
+                <div class="header-top">
+                    <div class="nav-toggle-btn">
+                        <label for="nav-toggle-btn"><span></span></label>
+                    </div>
+                    <picture class="header-top__logo-box">
+                        <source class="header-top__logo" srcset="img/logo-white-2x.png" media="(min-width:1280px)">
+                        <source class="header-top__logo" srcset="img/logo-white-small-2x.png"
+                            media="(max-width:1279px)">
+                        <source class="header-top__logo" srcset="img/logo-white-small-1x.png" media="(max-width:600px)">
+                        <img class="header-top__logo" srcset="img/logo-white-1x.png, img/logo-white-2x.png 2x"
+                            alt="Four Star IT Logo">
+                    </picture>
+
+                    <input style="display: none;" type="checkbox" id="search-open">
+                    <form class="header-top__form">
+                        <input class="header-top__form-input" type="text" placeholder="search here...">
+                        <a href="#" class="header-top__form-link">
+                            <ion-icon class="header-top__form-icon" name="search"></ion-icon>
+                        </a>
+                    </form>
+                    <div class="header-top__nav">
+                        <ul>
+                            <li>
+                                <ion-icon class="header-top__nav-icon" name="person"></ion-icon>
+                                <a href="#">Account</a>
+                            </li>
+                            <li>
+                                <ion-icon class="header-top__nav-icon" name="heart"></ion-icon>
+                                <p id="wish-list-icon">0</p>
+                                <a href="#">Wish List</a>
+                            </li>
+                            <li>
+                                <ion-icon class="header-top__nav-icon" name="cart"></ion-icon>
+                                <p id="cart-icon">0</p>
+                                <a href="#">Cart</a>
+                            </li>
+                            <li><a href="#">Log in/ out</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-open">
+                        <label for="search-open">
+                            <ion-icon class="search-open-icon" name="search"></ion-icon>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container" id="nav-container-js">
+            <div class="row">
+                <div class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#">Desktop</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li><a href="#">Corporate & Office pc</a></li>
+                                    <li>
+                                        <a href="#">Server</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Dell Server</a></li>
+                                                <li><a href="#">HP Server</a></li>
+                                                <li><a href="#">FTP Server</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Mini PC</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Intel Mini PC</a></li>
+                                                <li><a href="#">Chuwi Mini PC</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Brand PC</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Dell</a></li>
+                                                <li><a href="#">HP</a></li>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">Lenovo</a></li>
+                                                <li><a href="#">Aple</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Budget PC</a></li>
+                                    <li><a href="#">Gaming PC</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Laptop & Tablets</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Brands</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Acer</a></li>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">Chuwi</a></li>
+                                                <li><a href="#">Dell</a></li>
+                                                <li><a href="#">Gigabyte</a></li>
+                                                <li><a href="#">Huawei</a></li>
+                                                <li><a href="#">Lenovo</a></li>
+                                                <li><a href="#">MSI</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Gaming Laptops</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Rog</a></li>
+                                                <li><a href="#">Tuf</a></li>
+                                                <li><a href="#">Lenovo Ideapad</a></li>
+                                                <li><a href="#">Legion</a></li>
+                                                <li><a href="#">MSI</a></li>
+                                                <li><a href="#">Aorus</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">UltraBooks</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Apple MacBook</a></li>
+                                                <li><a href="#">Asus Zenbook</a></li>
+                                                <li><a href="#">Lenovo Yoga</a></li>
+                                                <li><a href="#">Lenovo</a></li>
+                                                <li><a href="#">HP Pavilion</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tablets</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">Lenovo</a></li>
+                                                <li><a href="#">Huawei</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Pc Parts</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Processor</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Intel</a></li>
+                                                <li><a href="#">AMD</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Motherboard</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">Gigabyte</a></li>
+                                                <li><a href="#">Msi</a></li>
+                                                <li><a href="#">Asrock</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">CPU Cooler</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Air Cooler</a></li>
+                                                <li><a href="#">AIO Liquid Cooler</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Desktop Ram</a></li>
+                                    <li><a href="#">Laptop Ram</a></li>
+                                    <li>
+                                        <a href="#">Graphics Card</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Nvidia</a></li>
+                                                <li><a href="#">AMD</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Power Supply</a></li>
+                                    <li><a href="#">Casing</a></li>
+                                    <li><a href="#">Internal-SSD</a></li>
+                                    <li><a href="#">Internal-HDD</a></li>
+                                    <li><a href="#">Optical Drive</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Monitor</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Brands</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">BenQ</a></li>
+                                                <li><a href="#">Dell</a></li>
+                                                <li><a href="#">HP</a></li>
+                                                <li><a href="#">LG</a></li>
+                                                <li><a href="#">Samsung</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Gaming Monitor</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Asus ROG</a></li>
+                                                <li><a href="#">Asus Tuf</a></li>
+                                                <li><a href="#">BenQ</a></li>
+                                                <li><a href="#">LG</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Budget Monitor PC</a></li>
+                                    <li><a href="#">4K Monitor</a></li>
+                                    <li><a href="#">Touch Monitor</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Office Equipment</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Printer</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Brother</a></li>
+                                                <li><a href="#">Canon</a></li>
+                                                <li><a href="#">Epson</a></li>
+                                                <li><a href="#">HP</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Photocopier</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Canon</a></li>
+                                                <li><a href="#">HP</a></li>
+                                                <li><a href="#">Toshiba</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projector</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">BenQ</a></li>
+                                                <li><a href="#">Epson</a></li>
+                                                <li><a href="#">View Sonic</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Pos Printer</a></li>
+                                    <li>
+                                        <a href="#">Scanner</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Canon</a></li>
+                                                <li><a href="#">Epson</a></li>
+                                                <li><a href="#">HP</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Toner & Cartridge</a></li>
+                                    <li><a href="#">Barcode Scanner</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Security</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li>
+                                        <a href="#">IP Camera</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Dahua</a></li>
+                                                <li><a href="#">Hikvision</a></li>
+                                                <li><a href="#">Jovision</a></li>
+                                                <li><a href="#">TP Link</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">CC Camera</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Dahua</a></li>
+                                                <li><a href="#">Hikvision</a></li>
+                                                <li><a href="#">Jovision</a></li>
+                                                <li><a href="#">Xiaomi</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wifi Camera</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Xiaomi</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Network</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li>
+                                        <a href="#">Router</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">TP Link</a></li>
+                                                <li><a href="#">D-link</a></li>
+                                                <li><a href="#">Netgear</a></li>
+                                                <li><a href="#">Tenda</a></li>
+                                                <li><a href="#">Netis</a></li>
+                                                <li><a href="#">Xiaomi</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wifi Receiver</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">TP link</a></li>
+                                                <li><a href="#">Havit</a></li>
+                                                <li><a href="#">D-Link</a></li>
+                                                <li><a href="#">Netis</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Network Extender</a></li>
+                                    <li><a href="#">LAN Card</a></li>
+                                    <li><a href="#">Modem</a></li>
+                                    <li><a href="#">Switch</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li><a href="#">Keyboard</a></li>
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Mouse Pad</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">Microphone</a></li>
+                                    <li><a href="#">Speaker</a></li>
+                                    <li><a href="#">Ear Phone</a></li>
+                                    <li><a href="#">Webcam</a></li>
+                                    <li>
+                                        <a href="#">Pendrive</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Adata</a></li>
+                                                <li><a href="#">Transcend</a></li>
+                                                <li><a href="#">Kingstone</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Memory Card</a></li>
+                                    <li><a href="#">Power Bank</a></li>
+                                    <li><a href="#">Tv Card</a></li>
+                                    <li><a href="#">SSD/ HDD Encloser</a></li>
+                                    <li><a href="#">Wifi/ Bluetooth Receiver</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Softwear</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li>
+                                        <a href="#">OS & MS Office</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Windows 10</a></li>
+                                                <li><a href="#">Office 365</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Antivirus</a>
+                                        <div class="main-nav__submenu--2">
+                                            <ul>
+                                                <li><a href="#">Kesperskey</a></li>
+                                                <li><a href="#">Panda</a></li>
+                                                <li><a href="#">Rev</a></li>
+                                                <li><a href="#">HP</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Cable & Converter</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li><a href="#">Cable</a></li>
+                                    <li><a href="#">Converter</a></li>
+                                    <li><a href="#">Adapter</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Gaming</a>
+                            <div class="main-nav__submenu--1">
+                                <ul>
+                                    <li><a href="#">Keyboard</a></li>
+                                    <li><a href="#">Mouse</a></li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">Mouse Pad</a></li>
+                                    <li><a href="#">Game Pad</a></li>
+                                    <li><a href="#">Gaming PC</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
