@@ -9,6 +9,9 @@ html {
   @media only screen and (max-width: 1279px) {
     html {
       font-size: 9px; } }
+  @media only screen and (max-width: 480px) {
+    html {
+      font-size: 7px; } }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -63,8 +66,12 @@ a:visited {
       align-items: center;
       justify-content: center;
       position: relative; }
-    .header-top__nav ul li:not(:last-child) {
-      margin-right: 30px; }
+      @media only screen and (max-width: 480px) {
+        .header-top__nav ul li {
+          margin: 0 5px; } }
+    @media only screen and (min-width: 1280px) {
+      .header-top__nav ul li:not(:last-child) {
+        margin-right: 30px; } }
     .header-top__nav ul p {
       position: absolute;
       height: 15px;
@@ -74,6 +81,10 @@ a:visited {
       color: #fff;
       text-align: center;
       border-radius: 50%; }
+      @media only screen and (max-width: 480px) {
+        .header-top__nav ul p {
+          height: 12px;
+          width: 12px; } }
   .header-top__nav-icon {
     color: #dddddd;
     font-size: 2rem; }
@@ -137,11 +148,17 @@ a:visited {
 
 #wish-list-icon {
   top: -5px;
-  right: 8px; }
+  right: 6px; }
+  @media only screen and (max-width: 480px) {
+    #wish-list-icon {
+      right: 4px; } }
 
 #cart-icon {
   top: -5px;
   right: -10px; }
+  @media only screen and (max-width: 480px) {
+    #cart-icon {
+      right: -6px; } }
 
 .nav-container {
   background-color: #fff;
