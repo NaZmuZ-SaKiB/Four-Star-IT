@@ -26,6 +26,14 @@ body{
     @media only screen and (min-width: 1500px){
         width: 80%;
     }
+
+    @include query(tab-port){
+        width: 90%;
+    }
+
+    @include query(phone){
+        width: 95%;
+    }
 }
 a:link,
 a:visited{
