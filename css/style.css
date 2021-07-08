@@ -36,6 +36,9 @@ a:visited {
   font-family: inherit;
   color: #000; }
 
+header {
+  z-index: 9999; }
+
 .header-top-container {
   background-color: #DC143C;
   padding: 10px 0;
@@ -208,6 +211,9 @@ a:visited {
       position: fixed;
       top: 55px;
       left: -100%; } }
+  @media only screen and (max-width: 480px) {
+    .nav-container {
+      top: 40px; } }
 
 .main-nav {
   display: flex; }

@@ -1,3 +1,6 @@
+header{
+    z-index: 9999;
+}
 .header-top-container{
     background-color: $color-primary-dark;
     padding: 10px 0;
@@ -228,6 +231,10 @@
         position: fixed;
         top: 55px;
         left: -100%;
+    }
+    @include query(phone){
+        top: 40px;
+
     }
     
 }
