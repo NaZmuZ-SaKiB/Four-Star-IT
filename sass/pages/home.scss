@@ -57,3 +57,46 @@
         }
     }
 }
+
+.section-posters{
+    margin-bottom: 50px;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        width: 24%;
+        overflow: hidden;
+
+        @include query(tab-port){
+            width: 49%;
+        }
+
+        & img{
+            width: 100%;
+            transition: all .5s;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+
+        &:nth-child(n+5){
+            margin-top: 15px;
+
+            @include query(phone){
+                display: none;
+            }
+        }
+
+        &:nth-child(n+3){
+            @include query(tab-port){
+                margin-top: 15px;
+            }
+        }
+    }
+}
