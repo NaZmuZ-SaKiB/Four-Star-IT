@@ -19,6 +19,9 @@ body {
 .row {
   width: 85%;
   margin: 0 auto; }
+  @media only screen and (min-width: 1500px) {
+    .row {
+      width: 80%; } }
 
 a:link,
 a:visited {
