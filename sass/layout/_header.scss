@@ -207,10 +207,11 @@
         @include query(laptop){
             background-color: $color-white;
             width: 150%;
+            height: 100vh;
+            overflow-y: scroll;
             margin: 0;
             padding-left: 15px;
             height: 100vh;
-            overflow-y: auto;
             box-shadow: 2px 0px 5px rgba($color-black, .2);
         }     
     }
