@@ -6,6 +6,11 @@
     @include query(laptop){
         height: 55px;
     }
+
+    @include query(phone){
+        padding: 5px 0;
+        height: 40px;
+    }
 }
 .header-top{
     display: flex;
@@ -17,6 +22,10 @@
 
         @include query(laptop){
             height: 35px;
+        }
+
+        @include query(phone){
+            height: 25px;
         }
     }
 
@@ -108,6 +117,10 @@
             opacity: 0;
             visibility: hidden;
             box-shadow: 0 2px 5px rgba($color-black, .2);
+        }
+
+        @include query(phone){
+            top: 40px;
         }
 
         &-input{
@@ -386,12 +399,15 @@
         justify-content: center;
         align-items: center;
     }
+
+    @include query(phone){
+        height: 30px;
+        width: 30px;
+    }
     & span{
         position: relative;
         display: inline-block;
         border-radius: 10px;
-        height: 3px;
-        width: 30px;
         background-color: $color-white;
 
         &,
@@ -401,6 +417,11 @@
             height: 2px;
             background-color: $color-white;
             display: inline-block;
+
+            @include query(phone){
+                height: 2px;
+                width: 25px;
+            }
         }
 
         &::before,
@@ -415,10 +436,17 @@
         &::before{
             top: -10px;
 
+            @include query(phone){
+                top: -7px;
+            }
         }
 
         &::after{
             top: 10px;
+
+            @include query(phone){
+                top: 7px;
+            }
         }
     }
 }

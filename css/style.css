@@ -36,6 +36,10 @@ a:visited {
   @media only screen and (max-width: 1279px) {
     .header-top-container {
       height: 55px; } }
+  @media only screen and (max-width: 480px) {
+    .header-top-container {
+      padding: 5px 0;
+      height: 40px; } }
 
 .header-top {
   display: flex;
@@ -46,6 +50,9 @@ a:visited {
     @media only screen and (max-width: 1279px) {
       .header-top__logo {
         height: 35px; } }
+    @media only screen and (max-width: 480px) {
+      .header-top__logo {
+        height: 25px; } }
   @media only screen and (max-width: 1279px) {
     .header-top__nav {
       position: fixed;
@@ -109,6 +116,9 @@ a:visited {
         opacity: 0;
         visibility: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); } }
+    @media only screen and (max-width: 480px) {
+      .header-top__form {
+        top: 40px; } }
     .header-top__form-input {
       font-family: inherit;
       border: 0;
@@ -300,18 +310,24 @@ a:visited {
       display: inline-flex;
       justify-content: center;
       align-items: center; } }
+  @media only screen and (max-width: 480px) {
+    .nav-toggle-btn {
+      height: 30px;
+      width: 30px; } }
   .nav-toggle-btn span {
     position: relative;
     display: inline-block;
     border-radius: 10px;
-    height: 3px;
-    width: 30px;
     background-color: #fff; }
     .nav-toggle-btn span, .nav-toggle-btn span::before, .nav-toggle-btn span::after {
       width: 30px;
       height: 2px;
       background-color: #fff;
       display: inline-block; }
+      @media only screen and (max-width: 480px) {
+        .nav-toggle-btn span, .nav-toggle-btn span::before, .nav-toggle-btn span::after {
+          height: 2px;
+          width: 25px; } }
     .nav-toggle-btn span::before, .nav-toggle-btn span::after {
       content: '';
       display: inline-block;
@@ -320,8 +336,14 @@ a:visited {
       transition: transform .2s; }
     .nav-toggle-btn span::before {
       top: -10px; }
+      @media only screen and (max-width: 480px) {
+        .nav-toggle-btn span::before {
+          top: -7px; } }
     .nav-toggle-btn span::after {
       top: 10px; }
+      @media only screen and (max-width: 480px) {
+        .nav-toggle-btn span::after {
+          top: 7px; } }
 
 #nav-toggle-btn:checked ~ .header-top-container label span {
   background-color: transparent; }
