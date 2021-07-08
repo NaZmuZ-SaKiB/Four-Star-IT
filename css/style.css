@@ -372,6 +372,9 @@ a:visited {
   .section-banner__img--main img {
     border: 10px solid #fff;
     width: 100%; }
+    @media only screen and (max-width: 767px) {
+      .section-banner__img--main img {
+        border: 5px solid #fff; } }
   .section-banner__img--sub > ul {
     list-style: none; }
     .section-banner__img--sub > ul li {

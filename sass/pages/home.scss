@@ -6,6 +6,10 @@
         & img{
             border: 10px solid $color-white;
             width: 100%;
+
+            @include query(tab-port){
+                border: 5px solid $color-white;
+            }
         }
     }
 
