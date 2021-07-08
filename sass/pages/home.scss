@@ -1,0 +1,55 @@
+.section-banner{
+    margin-bottom: 50px;
+
+    &__img--main{
+
+        & img{
+            border: 10px solid $color-white;
+            width: 100%;
+        }
+    }
+
+    &__img--sub{
+
+        &>ul{
+            list-style: none;
+
+            & li{
+                display: inline-block;
+
+                & img{  
+                    width: 100%;
+
+                    @include query(tab-port){
+                        width: 95%;
+                    }
+                }
+
+                &:first-child{
+                    margin-bottom: 20px;
+
+                    @include query(laptop){
+                        margin-bottom: 15px;
+                    }
+
+                    @include query(tab-port){
+                        margin-bottom: 0;
+                    }
+                }
+
+                &:last-child{
+
+                    @include query(tab-port){
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+            @include query(tab-port){
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

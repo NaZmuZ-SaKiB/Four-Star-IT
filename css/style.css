@@ -14,7 +14,8 @@ html {
       font-size: 7px; } }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  background-color: #dddddd; }
 
 .row {
   width: 85%;
@@ -365,3 +366,35 @@ a:visited {
 #search-open:checked ~ .header-top__form {
   opacity: 1;
   visibility: visible; }
+
+.section-banner {
+  margin-bottom: 50px; }
+  .section-banner__img--main img {
+    border: 10px solid #fff;
+    width: 100%; }
+  .section-banner__img--sub > ul {
+    list-style: none; }
+    .section-banner__img--sub > ul li {
+      display: inline-block; }
+      .section-banner__img--sub > ul li img {
+        width: 100%; }
+        @media only screen and (max-width: 767px) {
+          .section-banner__img--sub > ul li img {
+            width: 95%; } }
+      .section-banner__img--sub > ul li:first-child {
+        margin-bottom: 20px; }
+        @media only screen and (max-width: 1279px) {
+          .section-banner__img--sub > ul li:first-child {
+            margin-bottom: 15px; } }
+        @media only screen and (max-width: 767px) {
+          .section-banner__img--sub > ul li:first-child {
+            margin-bottom: 0; } }
+      @media only screen and (max-width: 767px) {
+        .section-banner__img--sub > ul li:last-child {
+          display: flex;
+          justify-content: flex-end; } }
+    @media only screen and (max-width: 767px) {
+      .section-banner__img--sub > ul {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end; } }
