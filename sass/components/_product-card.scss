@@ -10,6 +10,19 @@
     padding: 1.5rem;
     transition: all .3s;
     margin-bottom: 2rem;
+    text-align: left;
+
+    &:last-child{
+        display: none;
+
+        @include query(tab-land){
+            display: block;
+        }
+
+        @include query(tab-port){
+            display: none;
+        }
+    }
 
     @include query(laptop){
         margin-bottom: 1rem;
@@ -19,7 +32,7 @@
         width: 32.5%;
     }
 
-    @include query(phone){
+    @include query(tab-port){
         width: 49%;
     }
 
