@@ -1,6 +1,14 @@
 .flex-row{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.hr-line{
+    height: 2px;
+    width: 100%;
+    background-color: $color-gray-light-1;
+    margin: 15px 0;
 }
