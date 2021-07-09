@@ -1,6 +1,4 @@
 header{
-    position: fixed;
-    width: 100vw;
     z-index: 9999;
 }
 .header-top-container{
@@ -395,9 +393,12 @@ header{
 
 // Functionalities
 .hide-header-top{
+    // position: fixed;
+    // width: 100vw;
     height: 0;
     padding: 0;
     overflow: hidden;
+    transition: all .2s;
 }
 
 .nav-toggle-btn{
