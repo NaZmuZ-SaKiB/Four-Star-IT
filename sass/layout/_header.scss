@@ -1,14 +1,10 @@
 header{
-    @media only screen and (min-width:1280px) {
-        z-index: 9999;
-    }
-    
+    z-index: 9999;   
 }
 .header-top-container{
     background-color: $color-primary-dark;
     padding: 10px 0;
     position: relative;
-    z-index: 9000;
 
     @include query(laptop){
         height: 55px;
@@ -232,9 +228,8 @@ header{
         width: 15%;
         box-shadow: 2px 0px 5px rgba($color-black, .2);
         position: fixed;
-        padding-top: 55px;
+        top: 55px;
         left: -100%;
-        z-index: 8000;
     }
 
     @include query(tab-land){
@@ -246,7 +241,7 @@ header{
     }
 
     @include query(phone){
-        padding-top: 40px;
+        top: 40px;
 
     }
     
@@ -264,8 +259,6 @@ header{
         list-style: none;
         align-items: center;
         width: 100%;;
-        overflow-x: hidden;
-        overflow-y: scroll;
 
         @media only screen and (min-width: 1280px){
             justify-content: space-between;
@@ -274,6 +267,8 @@ header{
         @include query(laptop){
             flex-direction: column;
             align-items: flex-start;
+            overflow-x: hidden;
+            overflow-y: scroll;
         }
 
         &>li{
