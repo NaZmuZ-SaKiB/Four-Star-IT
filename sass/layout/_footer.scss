@@ -1,14 +1,40 @@
 .footer{
-    background-color: $color-primary-dark;
+    background-color: $color-primary-dark-2;
     padding: 50px 0;
+
+    @include query(laptop){
+        padding-top: 40px;
+    }
+
+    @include query(tab-land){
+        padding-top: 30px;
+    }
+
+    @include query(tab-port){
+        padding-top: 20px;
+    }
+
+    @include query(phone){
+        padding-top: 10px;
+    }
 
     &__links{
         list-style: none;
         font-size: 1.6rem;
-        margin: 50px 0;
+        margin-bottom: 50px;
+
+        @include query(laptop){
+            margin-bottom: 20px;
+        }
+
+        @include query(tab-land){
+            margin-bottom: 10px;
+        }
         
         & li a:link,
         & li a:visited{
+            display: inline-block;
+            padding: 10px;
             color: $color-gray-light-1;
         }
 
@@ -28,6 +54,15 @@
         margin-bottom: 20px;
         background-color: $color-primary-light;
         border-radius: 1.5rem;
+
+        @include query(tab-port){
+            padding: 10px;
+            font-size: 1.5rem;
+        }
+
+        @include query(phone){
+            width: 100%;
+        }
 
         & strong{
             font-size: 1.8rem;

@@ -6,6 +6,15 @@
         padding-top: 60px;
     }
 
+    @include query(tab-port){
+        margin-bottom: 20px;
+    }
+
+    @include query(phone){
+        padding-top: 45px;
+        margin-bottom: 10px;
+    }
+
     &__img--main{
 
         & img{
@@ -20,13 +29,31 @@
 
     &__big{
         width: 66%;
+
+        @include query(tab-port){
+            width: 100%;
+        }
     }
 
     &__small{
         width: 33%;
+
+        @include query(tab-port){
+            width: 50%;
+        }
     }
 
     &__img--sub{
+
+        @include query(tab-port){
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include query(phone){
+            margin-top: 10px;
+        }
 
         & img{
             width: 100%;
@@ -36,6 +63,14 @@
 
 .section-posters{
     margin-bottom: 50px;
+
+    @include query(tab-port){
+        margin-bottom: 20px;
+    }
+
+    @include query(phone){
+        margin-bottom: 10px;
+    }
 
     &__container{
         display: flex;

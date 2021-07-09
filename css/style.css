@@ -49,13 +49,15 @@ a:visited {
   background-color: #dddddd;
   margin: 15px 0; }
 
-header {
-  z-index: 9999; }
+@media only screen and (min-width: 1280px) {
+  header {
+    z-index: 9999; } }
 
 .header-top-container {
   background-color: #DC143C;
   padding: 10px 0;
-  position: relative; }
+  position: relative;
+  z-index: 9000; }
   @media only screen and (max-width: 1279px) {
     .header-top-container {
       height: 55px;
@@ -84,7 +86,9 @@ header {
       width: 100vw;
       left: 0;
       bottom: 0;
-      background-color: #DC143C; } }
+      background-color: #DC143C;
+      box-shadow: 0 -2px 1rem rgba(0, 0, 0, 0.2);
+      z-index: 7000; } }
   .header-top__nav ul {
     list-style: none;
     display: inline-flex; }
@@ -206,14 +210,9 @@ header {
   transition-delay: .1s; }
   @media only screen and (max-width: 1279px) {
     .nav-container .row {
-      background-color: #fff;
-      width: 150%;
-      height: 100vh;
-      overflow-y: scroll;
       margin: 0;
       padding-left: 15px;
-      height: 100vh;
-      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2); } }
+      height: 100vh; } }
   @media only screen and (min-width: 1280px) {
     .nav-container {
       position: relative;
@@ -221,12 +220,21 @@ header {
       height: 50px; } }
   @media only screen and (max-width: 1279px) {
     .nav-container {
+      width: 15%;
+      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
       position: fixed;
-      top: 55px;
-      left: -100%; } }
+      padding-top: 55px;
+      left: -100%;
+      z-index: 8000; } }
+  @media only screen and (max-width: 1023px) {
+    .nav-container {
+      width: 20%; } }
+  @media only screen and (max-width: 767px) {
+    .nav-container {
+      width: 30%; } }
   @media only screen and (max-width: 480px) {
     .nav-container {
-      top: 40px; } }
+      padding-top: 40px; } }
 
 .main-nav {
   display: flex; }
@@ -235,10 +243,12 @@ header {
       align-items: center;
       justify-content: center; } }
   .main-nav > ul {
-    width: 100%;
     display: flex;
     list-style: none;
-    align-items: center; }
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll; }
     @media only screen and (min-width: 1280px) {
       .main-nav > ul {
         justify-content: space-between; } }
@@ -248,14 +258,17 @@ header {
         align-items: flex-start; } }
     .main-nav > ul > li {
       padding: 15px 0; }
+      @media only screen and (max-width: 767px) {
+        .main-nav > ul > li {
+          padding: 8px 0; } }
       .main-nav > ul > li > a:link,
       .main-nav > ul > li > a:visited {
         font-size: 1.6rem;
         font-weight: 700;
         transition: all .2s; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 1279px) {
         .main-nav > ul > li:last-child {
-          margin-bottom: 100px; } }
+          margin-bottom: 150px; } }
       .main-nav > ul > li:hover {
         cursor: pointer; }
       .main-nav > ul > li:hover > a {
@@ -325,16 +338,18 @@ header {
           .main-nav__submenu--2 > ul > li:hover > a {
             color: #fff; }
 
-.hide-header-top {
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  transition: all .5s; }
+@media only screen and (min-width: 1280px) {
+  .hide-header-top {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s; } }
 
 .nav-toggle-btn {
   display: none;
   height: 35px;
-  width: 35px; }
+  width: 35px;
+  z-index: 9999; }
   @media only screen and (max-width: 1279px) {
     .nav-toggle-btn {
       display: inline-flex;
@@ -406,14 +421,34 @@ header {
   visibility: visible; }
 
 .footer {
-  background-color: #DC143C;
+  background-color: #da1a1c;
   padding: 50px 0; }
+  @media only screen and (max-width: 1279px) {
+    .footer {
+      padding-top: 40px; } }
+  @media only screen and (max-width: 1023px) {
+    .footer {
+      padding-top: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .footer {
+      padding-top: 20px; } }
+  @media only screen and (max-width: 480px) {
+    .footer {
+      padding-top: 10px; } }
   .footer__links {
     list-style: none;
     font-size: 1.6rem;
-    margin: 50px 0; }
+    margin-bottom: 50px; }
+    @media only screen and (max-width: 1279px) {
+      .footer__links {
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 1023px) {
+      .footer__links {
+        margin-bottom: 10px; } }
     .footer__links li a:link,
     .footer__links li a:visited {
+      display: inline-block;
+      padding: 10px;
       color: #dddddd; }
     .footer__links li a:hover {
       color: #fff; }
@@ -428,6 +463,13 @@ header {
     margin-bottom: 20px;
     background-color: #ff2d2d;
     border-radius: 1.5rem; }
+    @media only screen and (max-width: 767px) {
+      .footer__box-item {
+        padding: 10px;
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 480px) {
+      .footer__box-item {
+        width: 100%; } }
     .footer__box-item strong {
       font-size: 1.8rem; }
     .footer__box-item p:not(:last-child) {
@@ -459,6 +501,13 @@ header {
   @media only screen and (max-width: 1279px) {
     .section-banner {
       padding-top: 60px; } }
+  @media only screen and (max-width: 767px) {
+    .section-banner {
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 480px) {
+    .section-banner {
+      padding-top: 45px;
+      margin-bottom: 10px; } }
   .section-banner__img--main img {
     border: 10px solid #fff;
     width: 100%; }
@@ -467,13 +516,33 @@ header {
         border: 5px solid #fff; } }
   .section-banner__big {
     width: 66%; }
+    @media only screen and (max-width: 767px) {
+      .section-banner__big {
+        width: 100%; } }
   .section-banner__small {
     width: 33%; }
+    @media only screen and (max-width: 767px) {
+      .section-banner__small {
+        width: 50%; } }
+  @media only screen and (max-width: 767px) {
+    .section-banner__img--sub {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between; } }
+  @media only screen and (max-width: 480px) {
+    .section-banner__img--sub {
+      margin-top: 10px; } }
   .section-banner__img--sub img {
     width: 100%; }
 
 .section-posters {
   margin-bottom: 50px; }
+  @media only screen and (max-width: 767px) {
+    .section-posters {
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 480px) {
+    .section-posters {
+      margin-bottom: 10px; } }
   .section-posters__container {
     display: flex;
     justify-content: space-between;

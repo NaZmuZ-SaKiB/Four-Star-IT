@@ -1,10 +1,14 @@
 header{
-    z-index: 9999;
+    @media only screen and (min-width:1280px) {
+        z-index: 9999;
+    }
+    
 }
 .header-top-container{
     background-color: $color-primary-dark;
     padding: 10px 0;
     position: relative;
+    z-index: 9000;
 
     @include query(laptop){
         height: 55px;
@@ -42,6 +46,8 @@ header{
             left: 0;
             bottom: 0;
             background-color: $color-primary-dark;
+            box-shadow: 0 -2px 1rem rgba($color-black, .2);
+            z-index: 7000;
         }
     }
 
@@ -210,14 +216,9 @@ header{
 
     & .row{
         @include query(laptop){
-            background-color: $color-white;
-            width: 150%;
-            height: 100vh;
-            overflow-y: scroll;
             margin: 0;
             padding-left: 15px;
             height: 100vh;
-            box-shadow: 2px 0px 5px rgba($color-black, .2);
         }     
     }
 
@@ -228,12 +229,24 @@ header{
     }
 
     @include query(laptop){
+        width: 15%;
+        box-shadow: 2px 0px 5px rgba($color-black, .2);
         position: fixed;
-        top: 55px;
+        padding-top: 55px;
         left: -100%;
+        z-index: 8000;
     }
+
+    @include query(tab-land){
+        width: 20%;
+    }
+
+    @include query(tab-port){
+        width: 30%;
+    }
+
     @include query(phone){
-        top: 40px;
+        padding-top: 40px;
 
     }
     
@@ -247,11 +260,12 @@ header{
     } 
 
     &>ul{
-        width: 100%;
         display: flex;
         list-style: none;
         align-items: center;
-        
+        width: 100%;;
+        overflow-x: hidden;
+        overflow-y: scroll;
 
         @media only screen and (min-width: 1280px){
             justify-content: space-between;
@@ -265,6 +279,10 @@ header{
         &>li{
             padding: 15px 0;
 
+            @include query(tab-port){
+                padding: 8px 0;
+            }
+
             &>a:link,
             &>a:visited{
                 font-size: 1.6rem;
@@ -273,8 +291,8 @@ header{
             }
 
             &:last-child{
-                @include query(tab-port){
-                    margin-bottom: 100px;
+                @include query(laptop){
+                    margin-bottom: 150px;
                 }
             }
 
@@ -396,10 +414,12 @@ header{
 // header-top-hide 
 
 .hide-header-top{
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-    transition: all .5s;
+    @media only screen and (min-width: 1280px) {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: all .5s;
+    } 
 }
 
 // navigation bar toggle
@@ -408,6 +428,7 @@ header{
     display: none;
     height: 35px;
     width: 35px;
+    z-index: 9999;
 
     @include query(laptop){
         display: inline-flex;
