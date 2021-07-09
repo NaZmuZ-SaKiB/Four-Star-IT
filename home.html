@@ -21,7 +21,7 @@
 <body>
     <header>
         <input style="display: none;" type="checkbox" id="nav-toggle-btn">
-        <div class="header-top-container">
+        <div class="header-top-container hide-header-top" id="header-top">
             <div class="row">
                 <div class="header-top">
                     <div class="nav-toggle-btn">
@@ -476,18 +476,16 @@
         </div>
     </header>
     <section class="section-banner">
-        <div class="row">
-            <div class="col span_2_of_3">
+        <div class="row flex-row">
+            <div class="section-banner__big">
                 <div class="section-banner__img--main">
                     <img src="img/banner.jpg" alt="">
                 </div>
             </div>
-            <div class="col span_1_of_3">
+            <div class="section-banner__small">
                 <div class="section-banner__img--sub">
-                    <ul>
-                        <li><img src="img/banner-sub-1.jpg" alt=""></li>
-                        <li><img src="img/banner-sub-2.jpg" alt=""></li>
-                    </ul>
+                    <img src="img/banner-sub-1.jpg" alt="">
+                    <img src="img/banner-sub-2.jpg" alt="">
                 </div>
             </div>
         </div>

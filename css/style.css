@@ -36,7 +36,15 @@ a:visited {
   font-family: inherit;
   color: #000; }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
 header {
+  position: fixed;
+  width: 100vw;
   z-index: 9999; }
 
 .header-top-container {
@@ -292,7 +300,7 @@ header {
     @media only screen and (min-width: 1280px) {
       .main-nav__submenu--2 {
         position: absolute;
-        width: 100%;
+        min-width: 120%;
         top: 0;
         left: 130%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -311,6 +319,11 @@ header {
           background-color: #ff2d2d; }
           .main-nav__submenu--2 > ul > li:hover > a {
             color: #fff; }
+
+.hide-header-top {
+  height: 0;
+  padding: 0;
+  overflow: hidden; }
 
 .nav-toggle-btn {
   display: none;
@@ -387,7 +400,8 @@ header {
   visibility: visible; }
 
 .section-banner {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-top: 150px; }
   @media only screen and (max-width: 1279px) {
     .section-banner {
       padding-top: 60px; } }
@@ -397,32 +411,12 @@ header {
     @media only screen and (max-width: 767px) {
       .section-banner__img--main img {
         border: 5px solid #fff; } }
-  .section-banner__img--sub > ul {
-    list-style: none; }
-    .section-banner__img--sub > ul li {
-      display: inline-block; }
-      .section-banner__img--sub > ul li img {
-        width: 100%; }
-        @media only screen and (max-width: 767px) {
-          .section-banner__img--sub > ul li img {
-            width: 95%; } }
-      .section-banner__img--sub > ul li:first-child {
-        margin-bottom: 20px; }
-        @media only screen and (max-width: 1279px) {
-          .section-banner__img--sub > ul li:first-child {
-            margin-bottom: 15px; } }
-        @media only screen and (max-width: 767px) {
-          .section-banner__img--sub > ul li:first-child {
-            margin-bottom: 0; } }
-      @media only screen and (max-width: 767px) {
-        .section-banner__img--sub > ul li:last-child {
-          display: flex;
-          justify-content: flex-end; } }
-    @media only screen and (max-width: 767px) {
-      .section-banner__img--sub > ul {
-        margin-top: 10px;
-        display: flex;
-        justify-content: flex-end; } }
+  .section-banner__big {
+    width: 66%; }
+  .section-banner__small {
+    width: 33%; }
+  .section-banner__img--sub img {
+    width: 100%; }
 
 .section-posters {
   margin-bottom: 50px; }

@@ -1,2 +1,3 @@
-const navToogleBtn = document.getElementById('nav-toggle-btn')
-const navContainer = document.getElementById('nav-container-js')
+const headerTop = document.getElementById('header-top')
+
+console.log(headerTop)
