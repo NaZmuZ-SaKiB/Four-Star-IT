@@ -331,7 +331,8 @@ header {
   align-items: center;
   position: absolute;
   transition: all .3s;
-  transition-delay: .1s; }
+  transition-delay: .1s;
+  z-index: 9999; }
   @media only screen and (max-width: 1279px) {
     .nav-container .row {
       margin: 0;
@@ -361,7 +362,8 @@ header {
       top: 40px; } }
 
 .main-nav {
-  display: flex; }
+  display: flex;
+  z-index: 9999; }
   @media only screen and (min-width: 1280px) {
     .main-nav {
       align-items: center;
