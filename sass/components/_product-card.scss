@@ -1,41 +1,22 @@
 .product-card-container{
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+
+    @include query(tab-land){
+        grid-template-columns: repeat(3, 1fr);;
+    }
+    @include query(tab-port){
+        grid-template-columns: repeat(2, 1fr);;
+    }
 }
 .product-card{
-    width: 24.5%;
     border-radius: 1rem;
     background-color: $color-white;
     padding: 1.5rem;
     transition: all .3s;
-    margin-bottom: 2rem;
     text-align: left;
-
-    &:last-child{
-        display: none;
-
-        @include query(tab-land){
-            display: block;
-        }
-
-        @include query(tab-port){
-            display: none;
-        }
-    }
-
-    @include query(laptop){
-        margin-bottom: 1rem;
-    }
-
-    @include query(tab-land){
-        width: 32.5%;
-    }
-
-    @include query(tab-port){
-        width: 49%;
-    }
-
+    
     &:hover{
         box-shadow: 0 0 2rem rgba($color-black, .4);
     }

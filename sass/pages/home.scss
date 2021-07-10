@@ -164,10 +164,15 @@
 
     &__btn{
         display: inline-block;
-        border-bottom: 1px solid $color-green-light-1;
+        margin-top: 2rem;
+        border-bottom: 1px solid $color-primary-light;
+
+        @include query(phone){
+            margin-top: 1rem;
+        }
 
         &:hover{
-            background-color: $color-green-light-1;
+            background-color: $color-primary-light;
             color: $color-white;
             box-shadow: 0 3px 10px rgba($color-black, .2);
             transform: translate(0, -3px);
