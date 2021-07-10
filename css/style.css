@@ -366,6 +366,10 @@ header {
         font-size: 1.6rem;
         font-weight: 700;
         transition: all .2s; }
+        @media only screen and (max-width: 1279px) {
+          .main-nav > ul > li > a:link,
+          .main-nav > ul > li > a:visited {
+            font-size: 2rem; } }
       @media only screen and (max-width: 1279px) {
         .main-nav > ul > li:last-child {
           margin-bottom: 150px; } }

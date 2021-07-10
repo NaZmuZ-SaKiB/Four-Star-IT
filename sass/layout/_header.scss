@@ -284,6 +284,10 @@ header{
                 font-size: 1.6rem;
                 font-weight: 700;
                 transition: all .2s;
+
+                @include query(laptop){
+                    font-size: 2rem;
+                }
             }
 
             &:last-child{
