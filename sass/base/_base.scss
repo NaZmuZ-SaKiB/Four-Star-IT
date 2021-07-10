@@ -41,3 +41,24 @@ a:visited{
     font-family: inherit;
     color: $color-black;
 }
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: $color-gray-light-1;
+    border: 2px solid $color-white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $color-primary-dark;
+    border: 1px solid $color-white;
+    border-radius: .5rem;
+
+    &:hover{
+        background-color: $color-primary-light;
+    }
+}
