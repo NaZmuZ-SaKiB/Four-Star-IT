@@ -43,25 +43,32 @@
         }
     }
 
+    &__box-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 20px;
+
+        @include query(tab-port){
+            grid-gap: 1.5rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     &__box-item{
         color: $color-gray-light-1;
         font-size: 1.6rem;
         letter-spacing: 1px;
         display: flex;
         flex-direction: column;
-        width: 32%;
         padding: 15px;
-        margin-bottom: 20px;
+        
         background-color: $color-primary-light;
         border-radius: 1.5rem;
 
         @include query(tab-port){
             padding: 10px;
             font-size: 1.5rem;
-        }
-
-        @include query(phone){
-            width: 100%;
         }
 
         & strong{
