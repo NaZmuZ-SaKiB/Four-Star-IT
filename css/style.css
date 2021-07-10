@@ -38,7 +38,8 @@ a:visited {
 
 h2 {
   font-size: 3.5rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  text-transform: uppercase; }
 
 h3 {
   font-size: 2.5rem; }
@@ -686,20 +687,21 @@ header {
     line-height: 2rem; }
 
 .section-new-arival {
-  margin: 50px 0;
+  background-color: #eee;
+  padding: 50px 0;
   text-align: center; }
   @media only screen and (max-width: 1279px) {
     .section-new-arival {
-      margin: 40px 0; } }
+      padding: 40px 0; } }
   @media only screen and (max-width: 1023px) {
     .section-new-arival {
-      margin: 30px 0; } }
+      padding: 30px 0; } }
   @media only screen and (max-width: 767px) {
     .section-new-arival {
-      margin: 20px 0; } }
+      padding: 20px 0; } }
   @media only screen and (max-width: 480px) {
     .section-new-arival {
-      margin: 10px 0; } }
+      padding: 10px 0; } }
   .section-new-arival h2 {
     text-align: center; }
   .section-new-arival__btn {
@@ -717,3 +719,25 @@ header {
     .section-new-arival__btn:active {
       transform: translate(0, -1px);
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+
+.section-happy-buyer {
+  margin: 50px 0; }
+  .section-happy-buyer h2 {
+    text-align: center; }
+  .section-happy-buyer__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; }
+  .section-happy-buyer__item {
+    width: 24%;
+    overflow: hidden; }
+    @media only screen and (max-width: 767px) {
+      .section-happy-buyer__item {
+        width: 49%;
+        margin-bottom: 1rem; } }
+    .section-happy-buyer__item img {
+      width: 100%;
+      transition: all .5s; }
+      .section-happy-buyer__item img:hover {
+        transform: scale(1.05); }
