@@ -1,5 +1,8 @@
+.btn,
 .btn:link,
 .btn:visited{
+    cursor: pointer;
+    border: 0;
     display: inline-block;
     font-family: inherit;
     font-size: 1.6rem;
@@ -37,4 +40,13 @@
     padding-right: 3px;
     position: relative;
     top: 4px;
+}
+
+.btn-green{
+    color: $color-white;
+    background-color: $color-green-light-1;
+}
+
+.btn-green:hover{
+    background-color: $color-green-dark-1;
 }

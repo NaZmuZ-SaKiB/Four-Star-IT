@@ -61,7 +61,7 @@
                             </li>
                             <li>
                                 <ion-icon class="header-top__nav-icon" name="log-out"></ion-icon>
-                                <a href="login.html">Log in/ out</a>
+                                <a href="#">Log in/ out</a>
                             </li>
                             <li>
                                 <ion-icon class="header-top__nav-icon" name="create"></ion-icon>
@@ -473,289 +473,27 @@
             </div>
         </div>
     </header>
-    <section class="section-banner">
-        <div class="row flex-row">
-            <div class="section-banner__big">
-                <div class="section-banner__img--main">
-                    <img src="img/banner.jpg" alt="">
-                </div>
+    <section class="section-login">
+        <form action="" class="section-login__form">
+            <h2 class="section-login__heading">Log in</h2>
+            <div class="section-login__form-group">
+                <input class="section-login__input" type="email" placeholder="Email" required>
+                <span class="section-login__span">Email</span>
             </div>
-            <div class="section-banner__small">
-                <div class="section-banner__img--sub">
-                    <img src="img/banner-sub-1.jpg" alt="">
-                    <img src="img/banner-sub-2.jpg" alt="">
-                </div>
+            <div class="section-login__form-group">
+                <input class="section-login__input" type="password" placeholder="Password" required>
+                <span class="section-login__span">Password</span>
+                <a href="#" class="section-login__forgot-password">forgot password?</a>
             </div>
-        </div>
+            <button class="btn btn-green" type="submit">Log in</button>
+            <div class="section-login__form-group">
+                <p class="section-login__text">Don't have an account?</p>
+                <a href="#" class="btn btn-red">Create account</a>
+            </div>
+        </form>
     </section>
-    <section class="section-posters">
-        <div class="row">
-            <div class="section-posters__container">
-                <div class="section-posters__item"><img src="img/poster1.jpg" alt=""></div>
-                <div class="section-posters__item"><img src="img/poster2.jpeg" alt=""></div>
-                <div class="section-posters__item"><img src="img/poster3.jpg" alt=""></div>
-                <div class="section-posters__item"><img src="img/poster4.jpg" alt=""></div>
-                <div class="section-posters__item"><img src="img/poster5.jpg" alt=""></div>
-                <div class="section-posters__item"><img src="img/poster6.jpg" alt=""></div>
-                <div class="section-posters__item"><img src="img/poster7.jpg" alt=""></div>
-                <div class="section-posters__item"><img src="img/poster8.jpg" alt=""></div>
-            </div>
-        </div>
-    </section>
-    <section class="section-new-arival">
-        <h2>New Arivals</h2>
-        <div class="product-card-container row">
-            <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/asus.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">asus d509dj ryzen 5 3500U</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: AMD Ryzen 5 3500U</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 512GB SSD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    54,000 BDT <s>56,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/Lenovo.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">lenovo ideapad slim 3 3500U</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: AMD Ryzen 5 3500U</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 128GB SSD + 1TB HDD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    53,000 BDT <s>56,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/hp.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">hp 15S du3024tu i5 11th gen</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: Intel Core i5 11th Gen</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 512GB SSD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    53,800 BDT <s>66,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/dell.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">dell vostro 3400 i3 11th gen</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: Intel core i3 11th Gen</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 1TB HDD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    47,000 BDT <s>51,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/asus.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">asus d509dj ryzen 5 3500U</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: AMD Ryzen 5 3500U</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 512GB SSD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    54,000 BDT <s>56,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/Lenovo.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">lenovo ideapad slim 3 3500U</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: AMD Ryzen 5 3500U</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 128GB SSD + 1TB HDD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    53,000 BDT <s>56,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/hp.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">hp 15S du3024tu i5 11th gen</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: Intel Core i5 11th Gen</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 512GB SSD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    53,800 BDT <s>66,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/dell.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">dell vostro 3400 i3 11th gen</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: Intel core i3 11th Gen</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 1TB HDD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    47,000 BDT <s>51,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div>
-            <!-- <div class="product-card">
-                <div class="product-card-img">
-                    <img src="img/Lenovo2.jpg" alt="">
-                </div>
-                <div class="hr-line"></div>
-                <h4 class="product-card-title">lenovo slim 3 i5 10th gen</h4>
-                <ul class="product-card-short-spec">
-                    <li>Processor: Intel core i5 10th Gen</li>
-                    <li>Ram: 8GB DDR4</li>
-                    <li>Storage: 128GB SSD + 1TB HDD</li>
-                    <li>Display: 15.6" FHD Display</li>
-                </ul>
-                <p class="product-card-price">
-                    62,000 BDT <s>65,000/-</s>
-                </p>
-                <div class="product-card-buttons">
-                    <a href="#" class="btn btn-product-card btn-border-red">
-                        <ion-icon class="btn-icon" name="heart"></ion-icon> Wish List
-                    </a>
-                    <a href="#" class="btn btn-product-card btn-red">
-                        <ion-icon class="btn-icon" name="cart"></ion-icon> Add to Card
-                    </a>
-                </div>
-            </div> -->
-        </div>
-        <a href="#" class="btn section-new-arival__btn">Show More &rarr;</a>
-    </section>
-    <section class="section-happy-buyer">
-        <h2>happy buyers</h2>
-        <div class="section-happy-buyer__container row">
-            <div class="section-happy-buyer__item"><img src="img/happy byuer1.jpg" alt="happy buyer photo"></div>
-            <div class="section-happy-buyer__item"><img src="img/happy byuer2.jpg" alt="happy buyer photo"></div>
-            <div class="section-happy-buyer__item"><img src="img/happy byuer3.jpg" alt="happy buyer photo"></div>
-            <div class="section-happy-buyer__item"><img src="img/happy byuer4.jpg" alt="happy buyer photo"></div>
-        </div>
-    </section>
-    <section class="section-about">
-        <div class="row">
-            <h2>About Four Star IT</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iusto quasi vel aperiam nemo quisquam
-                fugiat ea voluptatem harum rerum illo dolores amet laudantium nobis perspiciatis quaerat minima
-                necessitatibus itaque ducimus obcaecati assumenda aliquam, sed modi tenetur? Rem amet aspernatur ad
-                autem corrupti impedit! Eius adipisci excepturi aspernatur facilis numquam officiis, omnis saepe,
-                debitis ullam vitae voluptate est corporis error ut dolorem cum animi sed minima quis. Eaque eos rem
-                illum atque nobis ullam quasi perspiciatis, aut impedit corporis! Tempora, eius accusantium excepturi
-                eaque dicta et eligendi quisquam, quo, ex repudiandae dolorem. Nobis repellendus aut atque nam eaque
-                voluptate sequi.
-            </p>
-            <br>
-            <br>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis delectus laboriosam ratione beatae odio
-                laborum recusandae architecto excepturi dolorem perspiciatis qui, porro aperiam et minus explicabo id.
-                Officiis, nisi quo fuga doloribus rem debitis asperiores ab sunt mollitia pariatur perspiciatis
-                consectetur sapiente quibusdam! Odio laboriosam omnis odit aspernatur alias. Asperiores?
-            </p>
-        </div>
-    </section>
+
+
     <footer class="footer">
         <div class="footer__box-container row">
             <div class="footer__box-item">
