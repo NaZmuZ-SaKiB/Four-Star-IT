@@ -61,10 +61,10 @@
         letter-spacing: 1px;
         display: flex;
         flex-direction: column;
-        padding: 15px;
-        
+        padding: 15px;       
         background-color: $color-primary-light;
         border-radius: 1.5rem;
+        transition: all .3s;
 
         @include query(tab-port){
             padding: 10px;

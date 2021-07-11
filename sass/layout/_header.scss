@@ -214,8 +214,9 @@ header{
 
     & .row{
         @include query(laptop){
-            margin: 0;
+            margin: 0 0;
             padding-left: 15px;
+            width: 100%;
             height: 100vh;
         }     
     }

@@ -175,13 +175,13 @@
         &:hover{
             background-color: $color-primary-light;
             color: $color-white;
-            box-shadow: 0 3px 10px rgba($color-black, .2);
+            box-shadow: 0 3px 10px rgba($color-black, .4);
             transform: translate(0, -3px);
         }
 
         &:active{
             transform: translate(0, -1px);
-            box-shadow: 0 2px 5px rgba($color-black, .2);
+            box-shadow: 0 2px 5px rgba($color-black, .3);
         }
     }
 }

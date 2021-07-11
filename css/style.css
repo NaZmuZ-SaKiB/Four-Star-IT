@@ -335,8 +335,9 @@ header {
   z-index: 9999; }
   @media only screen and (max-width: 1279px) {
     .nav-container .row {
-      margin: 0;
+      margin: 0 0;
       padding-left: 15px;
+      width: 100%;
       height: 100vh; } }
   @media only screen and (min-width: 1280px) {
     .nav-container {
@@ -599,7 +600,8 @@ header {
     flex-direction: column;
     padding: 15px;
     background-color: #ff2d2d;
-    border-radius: 1.5rem; }
+    border-radius: 1.5rem;
+    transition: all .3s; }
     @media only screen and (max-width: 767px) {
       .footer__box-item {
         padding: 10px;
@@ -749,11 +751,11 @@ header {
     .section-new-arival__btn:hover {
       background-color: #ff2d2d;
       color: #fff;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
       transform: translate(0, -3px); }
     .section-new-arival__btn:active {
       transform: translate(0, -1px);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
 
 .section-happy-buyer {
   margin: 50px 0; }
