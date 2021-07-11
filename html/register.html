@@ -13,8 +13,7 @@
         rel="stylesheet">
 
     <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Four Star IT</title>
 </head>
 
@@ -27,14 +26,18 @@
                     <div class="nav-toggle-btn">
                         <label for="nav-toggle-btn"><span></span></label>
                     </div>
-                    <picture class="header-top__logo-box">
-                        <source class="header-top__logo" srcset="img/logo-white-2x.png" media="(min-width:1280px)">
-                        <source class="header-top__logo" srcset="img/logo-white-small-2x.png"
-                            media="(max-width:1279px)">
-                        <source class="header-top__logo" srcset="img/logo-white-small-1x.png" media="(max-width:600px)">
-                        <img class="header-top__logo" srcset="img/logo-white-1x.png, img/logo-white-2x.png 2x"
-                            alt="Four Star IT Logo">
-                    </picture>
+                    <a href="home.html">
+                        <picture class="header-top__logo-box">
+                            <source class="header-top__logo" srcset="../img/logo-white-2x.png"
+                                media="(min-width:1280px)">
+                            <source class="header-top__logo" srcset="../img/logo-white-small-2x.png"
+                                media="(max-width:1279px)">
+                            <source class="header-top__logo" srcset="../img/logo-white-small-1x.png"
+                                media="(max-width:600px)">
+                            <img class="header-top__logo" srcset="../img/logo-white-1x.png, ../img/logo-white-2x.png 2x"
+                                alt="Four Star IT Logo">
+                        </picture>
+                    </a>
 
                     <input style="display: none;" type="checkbox" id="search-open">
                     <form class="header-top__form">
@@ -61,11 +64,11 @@
                             </li>
                             <li>
                                 <ion-icon class="header-top__nav-icon" name="log-out"></ion-icon>
-                                <a href="#">Log in/ out</a>
+                                <a href="login.html">Log in/ out</a>
                             </li>
                             <li>
                                 <ion-icon class="header-top__nav-icon" name="create"></ion-icon>
-                                <a href="#">Register</a>
+                                <a href="register.html">Register</a>
                             </li>
                         </ul>
                     </div>
@@ -473,26 +476,42 @@
             </div>
         </div>
     </header>
+
     <section class="section-login">
         <form action="" class="section-login__form">
-            <h2 class="section-login__heading">Log in</h2>
+            <h2 class="section-login__heading">Register New Account</h2>
+            <div class="section-login__form-group">
+                <input class="section-login__input" type="text" placeholder="First Name" required>
+                <span class="section-login__span">First Name</span>
+            </div>
+            <div class="section-login__form-group">
+                <input class="section-login__input" type="text" placeholder="Last Name" required>
+                <span class="section-login__span">Last Name</span>
+            </div>
             <div class="section-login__form-group">
                 <input class="section-login__input" type="email" placeholder="Email" required>
                 <span class="section-login__span">Email</span>
             </div>
             <div class="section-login__form-group">
+                <input class="section-login__input" type="tel" placeholder="Phone" required>
+                <span class="section-login__span">Phone</span>
+            </div>
+            <div class="section-login__form-group">
                 <input class="section-login__input" type="password" placeholder="Password" required>
                 <span class="section-login__span">Password</span>
-                <a href="#" class="section-login__forgot-password">forgot password?</a>
             </div>
-            <button class="btn btn-green" type="submit">Log in</button>
             <div class="section-login__form-group">
-                <p class="section-login__text">Don't have an account?</p>
-                <a href="#" class="btn btn-red">Create account</a>
+                <input class="section-login__input" type="password" placeholder="Confirm Password" required>
+                <span class="section-login__span">Confirm Password</span>
+            </div>
+            <button class="btn btn-green" type="submit">Create Account</button>
+            <div class="section-login__form-group">
+                <p class="section-login__text">
+                    Already have an account? &nbsp;<a href="login.html">Log in</a>
+                </p>
             </div>
         </form>
     </section>
-
 
     <footer class="footer">
         <div class="footer__box-container row">
@@ -553,7 +572,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

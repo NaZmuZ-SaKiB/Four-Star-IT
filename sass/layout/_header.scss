@@ -4,7 +4,8 @@ header{
 .header-top-container{
     background-color: $color-primary-dark;
     padding: 10px 0;
-    position: relative;
+    z-index: 9999;
+    // position: relative;
 
     @include query(laptop){
         height: 55px;
