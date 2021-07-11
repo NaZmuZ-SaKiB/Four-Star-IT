@@ -20,3 +20,41 @@ function hideHeader() {
 // ----------------------------------------------------------------------------
 //                                  Ending
 // ----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
+//                         filter collapse functionality
+// ----------------------------------------------------------------------------
+
+const filterToggleCheckBox = document.getElementById('filter-toggle-btn')
+const navToggleBtn = document.querySelector('.nav-toggle-btn')
+
+navToggleBtn.addEventListener('click', () => {
+    filterToggleCheckBox.checked = false
+})
+
+// ----------------------------------------------------------------------------
+//                                  Ending
+// ----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
+//                         filter collapse functionality
+// ----------------------------------------------------------------------------
+
+const filterCollapseBtn = document.querySelectorAll('#filter-collapse')
+const filterCollapseHeading = document.querySelectorAll('.filter-collaps-heading')
+
+filterCollapseBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.parentNode.parentNode.classList.toggle('show-filter')
+    })
+});
+
+filterCollapseHeading.forEach(heading => {
+    heading.addEventListener('click', () => {
+        heading.parentNode.classList.toggle('show-filter')
+    })
+});
+
+// ----------------------------------------------------------------------------
+//                                  Ending
+// ----------------------------------------------------------------------------
