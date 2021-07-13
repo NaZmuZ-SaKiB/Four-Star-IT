@@ -54,18 +54,30 @@ h1 {
   font-size: 3.5rem;
   margin-bottom: 3rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2.5rem; } }
 
 h2 {
   font-size: 3rem;
   margin-bottom: 3rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem; } }
 
 h3 {
   text-transform: uppercase;
   font-size: 2.5rem; }
+  @media only screen and (max-width: 767px) {
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem; } }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem; }
 
 P {
@@ -1186,6 +1198,12 @@ header {
     .specs-table tr .spec-name {
       display: flex;
       flex: 0 0 25rem; }
+      @media only screen and (max-width: 767px) {
+        .specs-table tr .spec-name {
+          flex: 0 0 20rem; } }
+      @media only screen and (max-width: 480px) {
+        .specs-table tr .spec-name {
+          flex: 0 0 18rem; } }
     .specs-table tr .spec-value {
       display: flex;
       flex: 1 1 auto; }
