@@ -239,6 +239,10 @@
     & tr{
         display: flex;
 
+        @include query(tab-port){
+            flex-direction: column;
+        }
+
         & td{
             line-height: 3rem;
             padding: 1rem;
@@ -249,11 +253,7 @@
             flex: 0 0 25rem;
 
             @include query(tab-port){
-                flex: 0 0 20rem;
-            }
-
-            @include query(phone){
-                flex: 0 0 18rem;
+                flex: 0 0 0;
             }
         }
 
