@@ -3,10 +3,19 @@
     padding: 5rem 0 0;
     box-shadow: 0 .5rem 1rem rgba($color-black, .5);
 
+    @include query(laptop){
+        padding:  8rem 0 0;
+    }
+
     &__basic{
         display: grid;
         grid-template-columns: 35% 60%;
         grid-gap: 5%;
+
+        @include query(tab-port){
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__image{
@@ -47,6 +56,12 @@
         }
     }
 
+    &__title{
+        @include query(tab-port){
+            margin: 3rem 0;
+        }
+    }
+
     &__price{
         font-size: 2rem;
         margin-bottom: 1.5rem;
@@ -73,6 +88,7 @@
         &-emi{
             margin-top: 2rem;
             & a{
+                display: inline-block;
                 font-size: 2rem;
                 color: $color-danger;
             }
@@ -86,6 +102,7 @@
         & ul{
             list-style: none;
             display: flex;
+            flex-wrap: wrap;
             font-size: 1.6rem;
 
             & li{
