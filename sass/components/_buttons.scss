@@ -50,3 +50,22 @@
 .btn-green:hover{
     background-color: $color-green-dark-1;
 }
+
+.btn-pagination{
+    background-color: $color-white;
+    border-radius: .5rem;
+
+    &:hover{
+        background-color: $color-primary-light;
+        color: $color-white;
+    }
+
+    &:disabled{
+        pointer-events: none;
+    }
+
+    &.pagination-active{
+        background-color: $color-primary-light;
+        color: $color-white;
+    }
+}

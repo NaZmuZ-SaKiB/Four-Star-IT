@@ -6,8 +6,13 @@
     @include query(tab-land){
         grid-template-columns: repeat(3, 1fr);;
     }
+
     @include query(tab-port){
         grid-template-columns: repeat(2, 1fr);;
+    }
+
+    @include query(phone){
+        grid-template-columns: 1fr;
     }
 }
 .product-card{
@@ -36,6 +41,12 @@
 
     &-title{
         text-transform: uppercase;
+        font-size: 1.8rem;
+
+        & a:hover{
+            color: $color-primary;
+            text-decoration:underline;
+        }
     }
 
     &-short-spec{

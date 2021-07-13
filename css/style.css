@@ -125,6 +125,18 @@ P {
 .btn-green:hover {
   background-color: #009D1A; }
 
+.btn-pagination {
+  background-color: #fff;
+  border-radius: .5rem; }
+  .btn-pagination:hover {
+    background-color: #ff2d2d;
+    color: #fff; }
+  .btn-pagination:disabled {
+    pointer-events: none; }
+  .btn-pagination.pagination-active {
+    background-color: #ff2d2d;
+    color: #fff; }
+
 .product-card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -135,6 +147,9 @@ P {
   @media only screen and (max-width: 767px) {
     .product-card-container {
       grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 480px) {
+    .product-card-container {
+      grid-template-columns: 1fr; } }
 
 .product-card {
   border-radius: 1rem;
@@ -152,7 +167,11 @@ P {
       .product-card-img img:hover {
         transform: scale(1.1); }
   .product-card-title {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.8rem; }
+    .product-card-title a:hover {
+      color: #ff0000;
+      text-decoration: underline; }
   .product-card-short-spec {
     list-style: none;
     margin-bottom: 1.5rem; }
@@ -716,6 +735,19 @@ header {
   .filter-form-group-label {
     font-size: 1.6rem;
     padding-right: 1.5rem; }
+
+.product-pagination {
+  background-color: #fff;
+  margin-top: 2rem;
+  border-radius: .5rem;
+  padding: 1rem; }
+  .product-pagination ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .product-pagination ul li:not(:last-child) {
+      margin-right: 1rem; }
 
 .filter-collapse-item {
   transition: all .3s;

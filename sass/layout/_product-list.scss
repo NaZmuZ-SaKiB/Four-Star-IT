@@ -125,6 +125,24 @@
     }
 }
 
+.product-pagination{
+    background-color: $color-white;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    padding: 1rem;
+
+    & ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & li:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+}
+
 // functionality
 
 .filter-collapse-item{
