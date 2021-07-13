@@ -1,0 +1,145 @@
+.section-product-summary{
+    background-color: $color-white;
+    padding: 5rem 0 0;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .5);
+
+    &__basic{
+        display: grid;
+        grid-template-columns: 35% 60%;
+        grid-gap: 5%;
+    }
+
+    &__image{
+        display: flex;
+        flex-direction: column;
+
+        & p{
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            color: $color-danger;
+        }
+    }
+
+    &__imgbig{
+        margin-bottom: 1.5rem;
+
+        & img{
+            width: 100%;
+            border: 1px solid $color-gray-dark-1;
+        }
+    }
+
+    &__imgsmall{
+        display: flex;
+        justify-content: center;
+
+        & img{
+            height: 5rem;
+            cursor: pointer;
+            border: 1px solid $color-gray-dark-1;
+
+            &:hover{
+                border: 2px solid $color-gray-dark-1;;
+            }
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
+        }
+    }
+
+    &__price{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+
+        & s{
+            font-size: 1.4rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__short-spec{
+        list-style: none;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        
+        & .btn{
+            color: $color-white;
+            margin-top: 2rem;
+        }
+    }
+
+    &__buy-section{
+
+        &-emi{
+            margin-top: 2rem;
+            & a{
+                font-size: 2rem;
+                color: $color-danger;
+            }
+        }
+        
+    }
+
+    &__nav{
+        margin-top: 3rem;
+
+        & ul{
+            list-style: none;
+            display: flex;
+            font-size: 1.6rem;
+
+            & li{
+                font-weight: 700;
+
+                & a{
+                    border-bottom: 2px solid transparent;
+                    display: inline-block;
+                    padding: 2rem;
+
+                    &:hover{
+                        border-bottom: 2px solid $color-primary-light;
+                    }
+                }
+
+                &:not(:last-child){
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+}
+
+// functionality
+
+.buy-quantity{
+    margin-top: 2rem;
+    display: inline-flex;
+
+    & span{
+        border: 1px solid $color-gray-light-1;
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    &-input{
+        border: 1px solid $color-gray-light-1;
+        height: 5rem;
+        width: 5rem;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    & .btn{
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        height: 5rem;
+    }
+}

@@ -58,3 +58,20 @@ filterCollapseHeading.forEach(heading => {
 // ----------------------------------------------------------------------------
 //                                  Ending
 // ----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
+//                Product Image Show function in product page
+// ----------------------------------------------------------------------------
+
+const productImgBig = document.getElementById('product-main-img')
+const productImgSmall = document.querySelectorAll('.product-small-img')
+
+productImgSmall.forEach(image => {
+    image.addEventListener('click', () => {
+        productImgBig.src = image.src
+    })
+})
+
+// ----------------------------------------------------------------------------
+//                                  Ending
+// ----------------------------------------------------------------------------

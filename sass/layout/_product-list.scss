@@ -8,6 +8,18 @@
         grid-template-columns: 1fr;
     }
 
+    @include query(tab-land){
+        padding-bottom: 4rem;
+    }
+
+    @include query(tab-port){
+        padding-bottom: 2.5rem;
+    }
+
+    @include query(phone){
+        padding-bottom: 2rem;
+    }
+
     &__filter{
 
         @include query(laptop){
