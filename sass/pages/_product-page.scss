@@ -1,7 +1,7 @@
 .section-product-summary{
     background-color: $color-white;
     padding: 5rem 0 0;
-    box-shadow: 0 .5rem 1rem rgba($color-black, .5);
+    box-shadow: 0 2px .5rem rgba($color-black, .4);
 
     @include query(laptop){
         padding:  8rem 0 0;
@@ -149,6 +149,10 @@
         width: 5rem;
         text-align: center;
         font-size: 1.6rem;
+
+        &:focus{
+            outline: none;
+        }
     }
 
     & .btn{
@@ -158,5 +162,113 @@
         align-items: center;
         margin-left: 2rem;
         height: 5rem;
+    }
+}
+
+.section-product-full{
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+
+    @include query(tab-land){
+        grid-template-columns: 1fr;
+    }
+
+    &__specs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__specs-tab{
+        background-color: $color-white;
+        padding: 2rem;
+        border-radius: .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__description{
+        background-color: $color-white;
+        padding: 3rem 2rem;
+        border-radius: .5rem;
+
+        & h3{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__related{
+        background-color: $color-white;
+        padding: 1.5rem;
+        border-radius: .5rem;
+
+        & .related-container{
+            display: flex;
+            flex-direction: column;
+        }
+        & .related-items{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 1rem;
+            margin: 0 0 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid $color-gray-light-1;
+
+            @include query(tab-land){
+                grid-template-columns: 1fr 5fr;
+            }
+
+            & img{
+                width: 100%;
+
+                @include query(tab-land){
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+.specs-table{
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+
+    & tr{
+        display: flex;
+
+        & td{
+            line-height: 3rem;
+            padding: 1rem;
+        }
+
+        & .spec-name{
+            display: flex;
+            flex: 0 0 25rem;
+        }
+
+        & .spec-value{
+            display: flex;
+            flex: 1 1 auto;
+        }
+    }
+    & tbody tr{
+        border-bottom: 1px solid $color-gray-light-1;
+
+        &:hover{
+            background-color: rgba($color-gray-light-1, .2);
+        }
+    }
+
+    & thead tr th{
+        display: flex;
+        flex: 1 1 auto;
+        color: $color-black;
+        line-height: 3rem;
+        padding: 1rem;
+        border-radius: .5rem;
+        background-color: rgba($color-gray-light-1, .5);
     }
 }
