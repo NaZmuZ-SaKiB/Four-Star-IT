@@ -277,7 +277,12 @@ header{
         }
 
         &>li{
-            padding: 15px 0;
+            padding: 1.5rem 0;
+
+            @include query(laptop){
+                position: relative;
+                width: 100%;
+            }
 
             @include query(tab-port){
                 padding: 8px 0;
@@ -288,9 +293,17 @@ header{
                 font-size: 1.6rem;
                 font-weight: 700;
                 transition: all .2s;
+                display: inline-block;
 
                 @include query(laptop){
                     font-size: 2rem;
+                }
+            }
+
+            &>a{
+                @include query(laptop){
+                    display: flex;
+                    justify-content: space-between;
                 }
             }
 
@@ -323,8 +336,11 @@ header{
         padding: 5px 0;
         font-size: 1.4rem;
         background-color: $color-white;
-        
         transition: all .3s;
+
+        @include query(laptop){
+            font-size: 1.8rem;
+        }
 
         @media only screen and (min-width: 1280px){
             position: absolute;
@@ -333,10 +349,6 @@ header{
             border-top: 5px solid $color-primary-light;
             opacity: 0;
             visibility: hidden;
-        }
-
-        @include query(laptop){
-            display: none;
         }
 
         &>ul{
@@ -508,6 +520,23 @@ header{
 }
 #nav-toggle-btn:checked ~ .nav-container{
     left: 0;
+}
+
+// submenu toggle 
+
+#toggle-submenu-1.hide-submenu-1+.main-nav__submenu--1{
+    display: none;
+}
+#toggle-submenu-1{
+    font-size: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    display: none;
+
+    @include query(laptop){
+        display: inline-block;
+    }
 }
 
 // Search bar 

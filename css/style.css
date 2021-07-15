@@ -421,7 +421,11 @@ header {
         overflow-x: hidden;
         overflow-y: scroll; } }
     .main-nav > ul > li {
-      padding: 15px 0; }
+      padding: 1.5rem 0; }
+      @media only screen and (max-width: 1279px) {
+        .main-nav > ul > li {
+          position: relative;
+          width: 100%; } }
       @media only screen and (max-width: 767px) {
         .main-nav > ul > li {
           padding: 8px 0; } }
@@ -429,11 +433,16 @@ header {
       .main-nav > ul > li > a:visited {
         font-size: 1.6rem;
         font-weight: 700;
-        transition: all .2s; }
+        transition: all .2s;
+        display: inline-block; }
         @media only screen and (max-width: 1279px) {
           .main-nav > ul > li > a:link,
           .main-nav > ul > li > a:visited {
             font-size: 2rem; } }
+      @media only screen and (max-width: 1279px) {
+        .main-nav > ul > li > a {
+          display: flex;
+          justify-content: space-between; } }
       @media only screen and (max-width: 1279px) {
         .main-nav > ul > li:last-child {
           margin-bottom: 150px; } }
@@ -451,6 +460,9 @@ header {
     font-size: 1.4rem;
     background-color: #fff;
     transition: all .3s; }
+    @media only screen and (max-width: 1279px) {
+      .main-nav__submenu--1 {
+        font-size: 1.8rem; } }
     @media only screen and (min-width: 1280px) {
       .main-nav__submenu--1 {
         position: absolute;
@@ -459,9 +471,6 @@ header {
         border-top: 5px solid #ff2d2d;
         opacity: 0;
         visibility: hidden; } }
-    @media only screen and (max-width: 1279px) {
-      .main-nav__submenu--1 {
-        display: none; } }
     .main-nav__submenu--1 > ul {
       list-style: none; }
       .main-nav__submenu--1 > ul > li {
@@ -575,6 +584,19 @@ header {
 
 #nav-toggle-btn:checked ~ .nav-container {
   left: 0; }
+
+#toggle-submenu-1.hide-submenu-1 + .main-nav__submenu--1 {
+  display: none; }
+
+#toggle-submenu-1 {
+  font-size: 3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: none; }
+  @media only screen and (max-width: 1279px) {
+    #toggle-submenu-1 {
+      display: inline-block; } }
 
 @media only screen and (min-width: 1280px) {
   .search-open {
