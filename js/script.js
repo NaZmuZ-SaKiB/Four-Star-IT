@@ -23,10 +23,17 @@ function hideHeader() {
 // ----------------------------------------------------------------------------
 
 const submenu1ToggleBtn = document.querySelectorAll('#toggle-submenu-1')
+const submenu2ToggleBtn = document.querySelectorAll('#toggle-submenu-2')
 
 submenu1ToggleBtn.forEach(btn => {
     btn.addEventListener('click', () => {
         btn.classList.toggle('hide-submenu-1')
+    })
+})
+
+submenu2ToggleBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('hide-submenu-2')
     })
 })
 

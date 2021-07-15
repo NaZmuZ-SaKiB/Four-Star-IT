@@ -476,14 +476,20 @@ header {
       .main-nav__submenu--1 > ul > li {
         padding: 5px 15px;
         position: relative; }
+        @media only screen and (max-width: 1279px) {
+          .main-nav__submenu--1 > ul > li {
+            padding: 5px; } }
         .main-nav__submenu--1 > ul > li > a {
           display: inline-block;
-          height: 100%;
-          width: 100%; }
-        .main-nav__submenu--1 > ul > li:hover {
-          background-color: #ff2d2d; }
-          .main-nav__submenu--1 > ul > li:hover > a {
-            color: #fff; }
+          height: 100%; }
+          @media only screen and (min-width: 1280px) {
+            .main-nav__submenu--1 > ul > li > a {
+              width: 100%; } }
+        @media only screen and (min-width: 1280px) {
+          .main-nav__submenu--1 > ul > li:hover {
+            background-color: #ff2d2d; }
+            .main-nav__submenu--1 > ul > li:hover > a {
+              color: #fff; } }
   @media only screen and (min-width: 1280px) {
     .main-nav__submenu--1 > ul > li:hover .main-nav__submenu--2 {
       opacity: 1;
@@ -585,8 +591,9 @@ header {
 #nav-toggle-btn:checked ~ .nav-container {
   left: 0; }
 
-#toggle-submenu-1.hide-submenu-1 + .main-nav__submenu--1 {
-  display: none; }
+@media only screen and (max-width: 1279px) {
+  #toggle-submenu-1.hide-submenu-1 + .main-nav__submenu--1 {
+    display: none; } }
 
 #toggle-submenu-1 {
   font-size: 3rem;
@@ -596,6 +603,20 @@ header {
   display: none; }
   @media only screen and (max-width: 1279px) {
     #toggle-submenu-1 {
+      display: inline-block; } }
+
+@media only screen and (max-width: 1279px) {
+  #toggle-submenu-2.hide-submenu-2 + .main-nav__submenu--2 {
+    display: none; } }
+
+#toggle-submenu-2 {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  display: none; }
+  @media only screen and (max-width: 1279px) {
+    #toggle-submenu-2 {
       display: inline-block; } }
 
 @media only screen and (min-width: 1280px) {

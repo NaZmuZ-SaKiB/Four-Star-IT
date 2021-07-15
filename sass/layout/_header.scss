@@ -358,20 +358,29 @@ header{
                 padding: 5px 15px;
                 position: relative;
 
+                @include query(laptop){
+                    padding: 5px 10px;
+                }
+
                 &>a{
                     display: inline-block;
                     height: 100%;
-                    width: 100%;
+
+                    @media only screen and(min-width:1280px){
+                        width: 100%;
+                    }
+                    
                 }
 
-                &:hover{
-                    background-color: $color-primary-light;
-
-                    &>a{
-                        color: $color-white;
+                @media only screen and (min-width:1280px){
+                    &:hover{
+                        background-color: $color-primary-light;
+    
+                        &>a{
+                            color: $color-white;
+                        }
                     }
                 }
-
             }
         }
     }
@@ -525,12 +534,31 @@ header{
 // submenu toggle 
 
 #toggle-submenu-1.hide-submenu-1+.main-nav__submenu--1{
-    display: none;
+    @include query(laptop){
+        display: none;
+    }  
 }
 #toggle-submenu-1{
     font-size: 3rem;
     position: absolute;
     top: 1rem;
+    right: 1.5rem;
+    display: none;
+
+    @include query(laptop){
+        display: inline-block;
+    }
+}
+
+#toggle-submenu-2.hide-submenu-2+.main-nav__submenu--2{
+    @include query(laptop){
+        display: none;
+    }  
+}
+#toggle-submenu-2{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 0;
     right: 1.5rem;
     display: none;
 
