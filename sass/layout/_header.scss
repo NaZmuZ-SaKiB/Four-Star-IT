@@ -240,7 +240,7 @@ header{
     }
 
     @include query(tab-port){
-        width: 35%;
+        width: 40%;
     }
 
     @include query(phone){
@@ -547,6 +547,10 @@ header{
 
     @include query(laptop){
         display: inline-block;
+    }
+
+    @include query(tab-port){
+        top: 2px;
     }
 }
 
